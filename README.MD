@@ -18,4 +18,18 @@
 
 - stop container with given name or id
 
-`docker stop 7f42b5e7` or `docker stop alfredo-salmon`
+`docker stop 7f42b5e73254` or `docker stop alfredo-salmon`
+
+- delete container
+
+`docker rm 7f42b5e73254`
+
+- run container and give it name
+
+`docker run --name website -d -p 8080:80 nginx:latest`
+
+- start/stop
+
+`docker start website`
+
+`docker stop website`
