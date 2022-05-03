@@ -33,3 +33,11 @@
 `docker start website`
 
 `docker stop website`
+
+- run container with volume
+
+`docker run -v /my/local/dir:/inside/the/container --name website -d -p 8080:80 nginx:latest`
+
+- start bash inside container
+
+`docker exec -it website bash`
