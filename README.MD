@@ -36,7 +36,7 @@
 
 - run container with volume
 
-`docker run -v /my/local/dir:/inside/the/container --name website -d -p 8080:80 nginx:latest`
+`docker run -v /my/local/html/files:/usr/share/nginx/html:ro --name website -d -p 8080:80 nginx:latest`
 
 - start bash inside container
 
