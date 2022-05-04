@@ -1,4 +1,10 @@
-# Basic Commands
+# Basic Docker Commands
+
+
+## Useful links
+
+[Official reference](https://docs.docker.com/reference/)
+[file/process duality](https://iximiuz.com/en/posts/containers-101-container-mgmt-commands/)
 
 - pull image from registry
 
@@ -41,3 +47,6 @@
 - start bash inside container
 
 `docker exec -it website bash`
+
+
+# Basic kubernetes commands
