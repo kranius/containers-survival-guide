@@ -1,4 +1,4 @@
-# Basic Docker Commands
+# Docker 101
 
 
 ## Useful links
@@ -8,6 +8,8 @@
 [file/process duality](https://iximiuz.com/en/posts/containers-101-container-mgmt-commands/)
 
 [dockerfile](https://docs.docker.com/engine/reference/builder/)
+
+## Basic commands
 
 - pull image from registry
 
@@ -52,4 +54,21 @@
 `docker exec -it website bash`
 
 
-# Basic kubernetes commands
+## Dockerfile (make your own image)
+
+- Simplest Dockerfile :
+
+`$ cat ./Dockerfile`
+```dockerfile
+# choose baseImage
+FROM nginx/latest
+
+# add all files in current directory
+ADD . /usr/share/nginx/html
+
+```
+
+- build image from Dockerfile in current directory and apply tag
+
+`docker build --tag website:latest .` 
+
