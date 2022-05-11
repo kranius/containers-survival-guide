@@ -9,6 +9,8 @@
 
 [dockerfile](https://docs.docker.com/engine/reference/builder/)
 
+[building containers for kubernetes](https://www.digitalocean.com/community/tutorials/building-optimized-containers-for-kubernetes)
+
 ## Basic commands
 
 - pull image from registry
